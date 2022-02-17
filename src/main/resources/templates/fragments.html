@@ -8,14 +8,15 @@
 <!--    <script type="text/javascript" th:src="@{/script.js}"></script>-->
 <!--    <link rel="stylesheet" th:href="@{/styles.css}"/>-->
 </head>
-<body class="container">
+<body>
 
 
-<nav th:fragment="header">
+<nav th:fragments="header">
+    <h1 th:text="${title}">Coding Events</h1>
     <ul class="nav">
-        <li class="nav-item>"><a class="nav-link"     href="/events">All Events</a></li>
-        <li class="nav-item"><a class="nav-link"     href="/events/create">Create Events</a></li>
-        <li class="nav-item"><a class="nav-link"     href="/events/delete">Delete Events</a></li>
+        <li class="nav-item>"><a class="nav-link" href="/events">All Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="/events/create">Create Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="/events/delete">Delete Events</a></li>
     </ul>
 </nav>
 </body>
